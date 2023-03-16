@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
 git commit -m "hello c"
-git push
+git push ; chmod a+x *
