@@ -1,5 +1,4 @@
-
-#include "_putchar.h"
+#include "main.h"
 
 /**
 *main - prints the word _putchar
@@ -14,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		_putchar(name[i]);
+		_putchar("name[i]");
 	}
 	_putchar('\n');
 	return (0);
