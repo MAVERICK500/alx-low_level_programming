@@ -1,5 +1,6 @@
+#ifndef "_putchar.h"
+#define "_putchar.h"
 #include "_putchar.h"
-
 /**
 *main - prints the word _putchar
 *
