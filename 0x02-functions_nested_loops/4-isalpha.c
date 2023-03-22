@@ -6,8 +6,10 @@
 *
 *Return: 1 when it is and 0 when it is not.
 */
-int _isalpha(int c)
+int _isalpha(void)
 {
+	int c = 92 ;
+
 	if ((c > 96 && c < 123) || (c > 64 && c < 123))
 		return (1);
 	else
