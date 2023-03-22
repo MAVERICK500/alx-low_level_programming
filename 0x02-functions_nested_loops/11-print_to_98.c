@@ -1,56 +1,47 @@
 #include "main.h"
-#include "stdlib.h"
 #include <stdio.h>
 
 /**
-* print_to_98 - Prints all natural numbers from input value to 98,
-* in order, separated by a comma followed by a space.
-* print_to_98 - Prints all natural numbers from input to 98,
-* in order separated by a comma followed by a space.
-* @n: The number to begin counting at.
+* print_to_98 - prints all numbers upto 98.
+* @n: first number
+*
+* Return: void
 */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	int i;
+
+	if (n < 98)
 	{
-		while (n >= 98)
+		for (i = n; i <= 98; i++)
 		{
-			if (n >= 100)
-				_putchar((n / 100) + '0');
-			_putchar(((n / 10) % 10) + '0');
-			_putchar((n % 10) + '0');
-
-			if (n == 98)
-				break;
-			_putchar(',');
-			_putchar(' ');
-			n--;
+			if (i != 98)
+			{
+				printf("%d, ", i);
+			}
+			else
+			{
+				printf("%d", i);
+			}
 		}
-		while (n > 98)
-			printf("%d, ", n--);
-		printf("%d\n", n);
 	}
-
+	else if (n > 98)
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (i != 98)
+			{
+				printf("%d, ", i);
+			}
+			else
+			{
+				printf("%d", i);
+			}
+		}
+	}
 	else
 	{
-		while (n <= 98)
-		{
-			if (n < 0)
-				_putchar('-');
-
-			if (abs(n) >= 10)
-				_putchar((abs(n) / 10) + '0');
-			_putchar((abs(n) % 10) + '0');
-
-			if (n == 98)
-				break;
-			_putchar(',');
-			_putchar(' ');
-			n++;
-		}
-		while (n < 98)
-			printf("%d, ", n++);
-		printf("%d\n", n);
+		printf("%d", n);
 	}
-	_putchar('\n');
+	printf("\n");
 }
