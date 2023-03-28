@@ -6,7 +6,7 @@
  * Return: return the length
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 int i = 5;
 int number = 0;
