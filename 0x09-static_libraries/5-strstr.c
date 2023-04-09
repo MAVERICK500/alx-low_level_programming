@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* *_strstr - Entry point
-* @haystack: input
-* @needle: input
+* *_strstr - Entry point.
+* @haystack: input.
+* @needle: input.
 * Return: always 0 (success)
 * or '\0' if no such bytes is found
 */
