@@ -30,3 +30,22 @@ int **alloc_grid(int width, int height)
             array[i][j] = 0;
     return (array);
 }
+
+void print_grid(int **grid, int width, int height)
+{
+    int w;
+    int h;
+
+    h = 0;
+    while (h < height)
+    {
+        w = 0;
+        while (w < width)
+        {
+            printf("%d ", grid[h][w]);
+            w++;
+        }
+        printf("\n");
+        h++;
+    }   
+}
