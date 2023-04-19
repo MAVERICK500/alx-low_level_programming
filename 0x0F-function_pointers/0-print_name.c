@@ -5,7 +5,7 @@
  * @name: pointer to a character array containing the name to print
  * @f: pointer to a function that takes a pointer to a character array
  *     and returns no value
- *
+ * Return : nothing
  */
 
 void print_name(char *name, void (*f)(char *))
