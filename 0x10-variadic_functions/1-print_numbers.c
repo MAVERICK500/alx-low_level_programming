@@ -5,7 +5,7 @@
  *
  * @separator: The string to print between the integers.
  * @n: The number of integers to print.
- * @...: The integers to print.
+ * @ ...: The integers to print.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
